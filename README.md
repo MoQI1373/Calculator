@@ -4,6 +4,6 @@ my first golang project
 
 this calculator is make with golang
 
-**KNOWN BUGS
+**KNOWN BUGS**
 
 Only number, it will crash with other symbol
