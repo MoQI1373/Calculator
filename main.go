@@ -15,8 +15,7 @@ var Selected *ui.Combobox
 
 
 func CalcForm() ui.Control {
-  //var number1, number2 int
-
+	
 	box := ui.NewVerticalBox()
 	box.SetPadded(true)
 
@@ -43,8 +42,6 @@ func CalcForm() ui.Control {
 	Symbol.SetSelected(0)
   Symbol.OnSelected(func(combobox *ui.Combobox){
 
-
-    	fmt.Scanln(Selected)
     })
     Form.Append("Symbol: ", Symbol, false)
 
@@ -52,14 +49,8 @@ func CalcForm() ui.Control {
     Num2 := ui.NewEntry()
     Num2.OnChanged(func(entry *ui.Entry){
 
-    	fmt.Scanln(Num2.Text())
     })
     Form.Append("Number: ", Num2, false)
-
-
-
-
-
 
     answerRespond := ui.NewEntry()
 
